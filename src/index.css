@@ -1,5 +1,7 @@
 /* Эти стили обнуления лучше подойдут к сайту, есть в google, я их всегда использую для мелких макетов. */
 
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -142,5 +144,10 @@ select {
   h6 {
     font-size: inherit;
     font-weight: 400;
+    font-style: inherit;
   }
   /*--------------------*/
+
+body {
+  font-family: "Bona Nova SC", serif;
+}

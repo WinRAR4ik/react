@@ -1,5 +1,6 @@
-import { Link, Outlet } from "react-router-dom";
+import {NavLink, Outlet} from "react-router-dom";
 import "./styles.scss";
+
 export function Layout() {
   return (
     <div className="layout">
@@ -8,16 +9,16 @@ export function Layout() {
         <nav>
           <ul>
             <li>
-              <Link to={"/"}>Home</Link>
+              <NavLink to={"/"} className={({isActive}) => isActive ? 'active' : ''}>Home</NavLink>
             </li>
             <li>
-              <Link to={"/gallery"}>Gallery</Link>
+              <NavLink to={"/gallery"} className={({isActive}) => isActive ? 'active' : ''}>Gallery</NavLink>
             </li>
             <li>
-              <Link to={"/about"}>About</Link>
+              <NavLink to={"/about"} className={({isActive}) => isActive ? 'active' : ''}>About</NavLink>
             </li>
             <li>
-              <Link to={"/contact"}>Contact</Link>
+              <NavLink to={"/favorite"} className={({isActive}) => isActive ? 'active' : ''}>Favorite</NavLink>
             </li>
           </ul>
         </nav>
