@@ -1,12 +1,20 @@
 import './styles.scss';
 
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
 
 import { ArrowUp } from '../UI/index.js';
 
 export function Layout() {
+  const location = useLocation();
+
+  console.log(location.pathname);
+
   return (
-    <div className='layout'>
+    <div
+      className={
+        location.pathname === '/about' ? 'layout layout-top-content' : 'layout'
+      }
+    >
       <header>
         <h1>Galeria de Arte</h1>
         <nav>

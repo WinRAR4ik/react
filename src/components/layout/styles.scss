@@ -1,6 +1,7 @@
 @use '../../App.scss' as *;
 
 .layout {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,12 +74,21 @@
     padding: 50px;
   }
 
+  &.layout-top-content {
+    justify-content: flex-start;
+
+    .content {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
   footer {
     background-color: $primary-color;
     color: #fff;
     text-align: center;
     padding: 1em;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
   }
