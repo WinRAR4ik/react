@@ -1,0 +1,27 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .Title {
+    font-size: 4rem;
+  }
+
+  .Description {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+
+  .img-wrap {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .image {
+      width: 550px;
+      height: 400px;
+      margin: 0 10px;
+    }
+  }
+}
