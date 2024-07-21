@@ -1,1 +1,2 @@
-export * from './heart'
+export * from './arrowUp';
+export * from './heart';

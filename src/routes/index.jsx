@@ -1,20 +1,21 @@
-import {useRoutes} from "react-router-dom";
-import {Layout} from "../components/layout";
-import {About, Favorite, ErrorPage, Gallery, Home, PostPage} from "../pages";
+import { useRoutes } from 'react-router-dom';
+
+import { Layout } from '../components/layout';
+import { About, ErrorPage, Favorite, Gallery, Home, PostPage } from '../pages';
 
 export const PageRoutes = () => {
   return useRoutes([
     {
-      path: "/",
-      element: <Layout/>,
+      path: '/',
+      element: <Layout />,
       children: [
-        {index: true, element: <Home/>},
-        {path: "/about", element: <About/>},
-        {path: "/favorite", element: <Favorite/>},
-        {path: "/gallery", element: <Gallery/>},
-        {path: '/gallery/:id', element: <PostPage/>}
+        { index: true, element: <Home /> },
+        { path: '/about', element: <About /> },
+        { path: '/favorite', element: <Favorite /> },
+        { path: '/gallery', element: <Gallery /> },
+        { path: '/gallery/:id', element: <PostPage /> },
       ],
     },
-    {path: '*', element: <ErrorPage/>},
+    { path: '*', element: <ErrorPage /> },
   ]);
-}
+};

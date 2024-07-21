@@ -1,5 +1,7 @@
 :root {
-  --bg: #67043E;
+  --bg: #67043e;
+  --bg-hover: #7e064d;
 }
 
-$primary-color: var(--bg)
+$primary-color: var(--bg);
+$primary-color-hover: var(--bg-hover);

@@ -1,29 +1,37 @@
-import "./styles.scss";
-import Lottie from "lottie-react";
+import './styles.scss';
 
-import Loader from '../../assets/Loader.json'
-import {useNavigate} from "react-router-dom";
-import {usePostsStore} from "../../store/index.js";
-import {PostList} from "../../components/index.js";
+import Lottie from 'lottie-react';
+import { useNavigate } from 'react-router-dom';
 
+import Loader from '../../assets/Loader.json';
+import { PostList } from '../../components/index.js';
+import { usePostsStore } from '../../store/index.js';
 
 export function Gallery() {
-  const {error, isLoading, posts} = usePostsStore()
+  const { error, isLoading, posts, loadMorePosts } = usePostsStore();
 
   const navigate = useNavigate();
 
-  if (isLoading) return <Lottie animationData={Loader}/>;
+  if (isLoading && posts.length === 0) return <Lottie animationData={Loader} />;
   if (error) return <div>Error: {error}</div>;
 
   function goToPost(id) {
     navigate(`/gallery/${id}`);
   }
 
+  function handleClick() {
+    loadMorePosts();
+  }
+
   return (
-    <div className="Gallery">
-      <section className="gallery">
-        <PostList posts={posts} onClick={goToPost}/>
-        <button>Show more</button>
+    <div className='Gallery'>
+      <section className='gallery'>
+        <PostList posts={posts} onClick={goToPost} />
+        <div className='button-wrap'>
+          <button className={'btn'} onClick={handleClick} disabled={isLoading}>
+            {!isLoading ? 'Show more' : 'loading...'}
+          </button>
+        </div>
       </section>
     </div>
   );

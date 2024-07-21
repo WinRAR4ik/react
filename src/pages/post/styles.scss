@@ -1,0 +1,54 @@
+@use '../../App' as *;
+
+.PostPage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .btn {
+    padding: 12px 20px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .left {
+    width: 45%;
+    .art-title {
+      font-size: 3rem;
+    }
+    .art-artist {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+    .art-date {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .image {
+      object-fit: contain;
+      max-height: 600px;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    .description-title {
+      font-size: 3rem;
+    }
+    .list {
+      margin-top: 20px;
+      .item {
+        font-size: 1.5rem;
+        margin-top: 5px;
+        .bold {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

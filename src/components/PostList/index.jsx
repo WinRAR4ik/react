@@ -1,15 +1,20 @@
-import './styles.scss'
-import {Card} from "../card/index.jsx";
+import './styles.scss';
 
-export function PostList({posts, onClick}) {
+import { Card } from '../card/index.jsx';
+
+export function PostList({ posts, onClick }) {
   return (
-    <div className="paintings">
+    <div className='paintings'>
       {posts.map((card) => (
         <Card
           post={card}
           key={card.objectID}
           title={card.title}
-          artist={card.artistDisplayName === '' ? 'Unknown Artist' : card.artistDisplayName}
+          artist={
+            card.artistDisplayName === ''
+              ? 'Unknown Artist'
+              : card.artistDisplayName
+          }
           img={card.primaryImage}
           onClick={() => onClick(card.objectID)}
           period={card.objectDate === '' ? 'Unknown' : card.objectDate}
@@ -18,5 +23,5 @@ export function PostList({posts, onClick}) {
         />
       ))}
     </div>
-  )
+  );
 }
