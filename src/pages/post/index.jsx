@@ -27,38 +27,37 @@ export function PostPage() {
         <img className={'image'} src={post.primaryImage} alt='' />
       </div>
       <div className='right'>
-        <h1 className={'description-title'}>Artwork Details</h1>
+        <h1 className={'description-title'}>Detalhes da Arte</h1>
         <ul className='list'>
           <li className='item'>
-            <span className={'bold'}>Title:</span> {post.title}
+            <span className={'bold'}>Título:</span> {post.title}
           </li>
           <li className='item'>
-            <span className={'bold'}>Date:</span>{' '}
+            <span className={'bold'}>Data:</span>{' '}
             {post.objectDate === '' ? 'Unknown' : post.objectDate}
           </li>
           <li className='item'>
-            <span className={'bold'}>Geography:</span>{' '}
+            <span className={'bold'}>Geografia:</span>{' '}
             {post.geographyType === '' ? 'Unknown' : post.geographyType}
           </li>
           <li className='item'>
-            <span className={'bold'}>Culture:</span>{' '}
+            <span className={'bold'}>Cultura:</span>{' '}
             {post.culture === '' ? 'Unknown' : post.culture}
           </li>
           <li className='item'>
-            <span className={'bold'}>Medium:</span> {post.medium}
+            <span className={'bold'}>Meio:</span> {post.medium}
           </li>
           <li className='item'>
-            <span className={'bold'}>Dimensions:</span> {post.dimensions}
+            <span className={'bold'}>Tamanhos:</span> {post.dimensions}
           </li>
           <li className='item'>
-            <span className={'bold'}>Classification:</span>{' '}
-            {post.classification}
+            <span className={'bold'}>Classificação:</span> {post.classification}
           </li>
           <li className='item'>
             <span className={'bold'}>Credit Line:</span> {post.creditLine}
           </li>
           <li className='item'>
-            <span className={'bold'}>Accession Number:</span>{' '}
+            <span className={'bold'}>Número de acesso:</span>{' '}
             {post.accessionNumber}
           </li>
         </ul>

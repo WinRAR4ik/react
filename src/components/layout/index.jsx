@@ -8,7 +8,7 @@ export function Layout() {
   return (
     <div className='layout'>
       <header>
-        <h1>Art Gallery</h1>
+        <h1>Galeria de Arte</h1>
         <nav>
           <ul>
             <li>
@@ -16,7 +16,7 @@ export function Layout() {
                 to={'/'}
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
-                Home
+                Página inicial
               </NavLink>
             </li>
             <li>
@@ -24,7 +24,7 @@ export function Layout() {
                 to={'/gallery'}
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
-                Gallery
+                Galeria
               </NavLink>
             </li>
             <li>
@@ -32,7 +32,7 @@ export function Layout() {
                 to={'/about'}
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
-                About
+                Sobre
               </NavLink>
             </li>
             <li>
@@ -40,7 +40,7 @@ export function Layout() {
                 to={'/favorite'}
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
-                Favorite
+                Favoritos
               </NavLink>
             </li>
           </ul>
@@ -52,7 +52,7 @@ export function Layout() {
       </main>
 
       <footer>
-        <p>&copy; 2024 Art Gallery</p>
+        <p>&copy; 2023/2024 Escola Secundária Miguel Torga</p>
       </footer>
 
       <ArrowUp />

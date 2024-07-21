@@ -29,7 +29,7 @@ export function Gallery() {
         <PostList posts={posts} onClick={goToPost} />
         <div className='button-wrap'>
           <button className={'btn'} onClick={handleClick} disabled={isLoading}>
-            {!isLoading ? 'Show more' : 'loading...'}
+            {!isLoading ? 'Mostrar mais' : 'carregar...'}
           </button>
         </div>
       </section>

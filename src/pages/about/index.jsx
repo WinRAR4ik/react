@@ -1,7 +1,8 @@
+import './styles.scss';
 export function About() {
   return (
-    <div>
-      <h2>About</h2>
+    <div className='AboutPage'>
+      <h1 className='Title'>Sobre o projecto</h1>
     </div>
   );
 }

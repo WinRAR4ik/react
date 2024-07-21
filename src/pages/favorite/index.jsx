@@ -27,7 +27,7 @@ export function Favorite() {
               style={{ height: '100%', width: '300px' }}
             />
             <h1 style={{ textAlign: 'center', fontSize: '1.4rem' }}>
-              No Favorite posts
+              Ainda não tem favoritos
             </h1>
           </div>
         ) : (
