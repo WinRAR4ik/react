@@ -12,7 +12,9 @@ export function Layout() {
   return (
     <div
       className={
-        location.pathname === '/about' ? 'layout layout-top-content' : 'layout'
+        location.pathname === '/about' || location.pathname === '/'
+          ? 'layout layout-top-content'
+          : 'layout'
       }
     >
       <header>
