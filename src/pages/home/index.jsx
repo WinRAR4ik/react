@@ -2,7 +2,7 @@ import './styles.scss';
 export function Home() {
   return (
     <div className='Home'>
-      <h1 className='Title'>Bem vindos no meu site Online Galleria</h1>
+      <h1 className='Title'>Bem-vindos ao meu site Online Galleria</h1>
       <p className='Description'>
         Este site foi criado para apreciar a arte e dá uma possibilidade
         fantástica para as pessoas que, por vários motivos, não conseguem

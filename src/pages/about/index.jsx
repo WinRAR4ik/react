@@ -3,7 +3,7 @@ import './styles.scss';
 export function About() {
   return (
     <div className='AboutPage'>
-      <h1 className='title'>Sobre o projecto</h1>
+      <h1 className='title'>Sobre o projeto</h1>
       <p className='description'>
         Este site é um projeto desenvolvido como parte da minha Prova de Aptidão
         Profissional (PAP) para o Curso de Informática da Escola Miguel Torga.
